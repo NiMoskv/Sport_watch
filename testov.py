@@ -1,7 +1,7 @@
 class Training:
     """Базовый класс тренировки."""
 
-    def __init__(*self,
+    def __init__(self,
                  action: int,
                  duration: float,
                  weight: float,
@@ -20,5 +20,6 @@ class Training:
     def __str__(self) -> str:
         return (f'steps: {self.action} , duration: {self.duration}, weight: {self.weight}, working_type: {self.working_type} ')
 
-r1 = Training(*[720, 1, 80, 'SWM'])
+arg=[720, 1, 80, 'SWM']
+r1 = Training(*arg)
 print(r1)
